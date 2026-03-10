@@ -169,7 +169,7 @@ export default function Product() {
 
               <div className="mt-auto pt-6 border-t">
                 <Link
-                  href="/products/HD"
+                  href="/products/hd"
                   className="text-sm font-semibold text-[#DC2626] inline-flex items-center"
                 >
                   Lihat Detail
