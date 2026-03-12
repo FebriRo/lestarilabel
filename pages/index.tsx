@@ -5,6 +5,7 @@ import Product    from "../components/Product"
 import Layanan    from "../components/Layanan"
 import Testimoni  from "../components/Testimoni"
 import KenaliKualitas     from "../components/KenaliKualitas"
+import TrustedClient      from "../components/TrustedClient"
 import Contactus  from "../components/Contactus"
 import Footer     from "../components/Footer"
 import FloatingWA     from "../components/FloatingWA"
@@ -27,6 +28,8 @@ export default function Products() {
       
       <KenaliKualitas />
 
+      <TrustedClient />
+      
       <Contactus />
 
       <Footer />
