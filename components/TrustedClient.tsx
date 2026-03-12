@@ -20,8 +20,9 @@ export default function TrustedBrands({ speed = 0.2 }) {
     const container = scrollRef.current;
     if (!container) return;
 
-    let raf;
+    let raf: number;
 
+    
     const step = () => {
       if (!isPausedRef.current) {
         container.scrollLeft += speed;
@@ -85,7 +86,7 @@ export default function TrustedBrands({ speed = 0.2 }) {
 
               </div>
 
-            ))}
+              ))}
 
           </div>
 
@@ -94,5 +95,5 @@ export default function TrustedBrands({ speed = 0.2 }) {
       </div>
 
     </section>
-  );
+    );
 }
