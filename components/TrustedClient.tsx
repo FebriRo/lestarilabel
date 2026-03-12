@@ -1,7 +1,5 @@
-// components/TrustedBrands.js
 import { useEffect, useRef } from "react";
 
-// Array logo klien
 const brands = [
   { name: "Brand A", logo: "/client/ANCOL.png" },
   { name: "Brand B", logo: "/client/INFORMA.png" },
@@ -13,24 +11,25 @@ const brands = [
 
 export default function TrustedBrands({ speed = 0.2 }) {
 
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
   const isPausedRef = useRef(false);
 
   useEffect(() => {
+
     const container = scrollRef.current;
     if (!container) return;
 
     let raf: number;
 
-    
     const step = () => {
       if (!isPausedRef.current) {
+
         container.scrollLeft += speed;
 
-        // infinite loop
         if (container.scrollLeft >= container.scrollWidth / 2) {
           container.scrollLeft -= container.scrollWidth / 2;
         }
+
       }
 
       raf = requestAnimationFrame(step);
@@ -53,16 +52,12 @@ export default function TrustedBrands({ speed = 0.2 }) {
           Trusted by Top Brands
         </h2>
 
-        {/* frame wrapper */}
         <div className="relative overflow-hidden">
 
-          {/* frame kiri */}
           <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10"></div>
 
-          {/* frame kanan */}
           <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
 
-          {/* slider */}
           <div
             ref={scrollRef}
             className="flex space-x-10 overflow-x-auto scrollbar-hide cursor-grab items-center"
@@ -86,7 +81,7 @@ export default function TrustedBrands({ speed = 0.2 }) {
 
               </div>
 
-              ))}
+            ))}
 
           </div>
 
@@ -95,5 +90,5 @@ export default function TrustedBrands({ speed = 0.2 }) {
       </div>
 
     </section>
-    );
+  );
 }
