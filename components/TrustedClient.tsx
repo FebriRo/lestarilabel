@@ -1,15 +1,19 @@
 import { useEffect, useRef } from "react";
 
 const brands = [
-  { name: "Brand A", logo: "/client/ANCOL.png" },
-  { name: "Brand B", logo: "/client/INFORMA.png" },
-  { name: "Brand C", logo: "/client/KRISBOW.png" },
-  { name: "Brand D", logo: "/client/NESCAFE.png" },
-  { name: "Brand E", logo: "/client/SWISS BELL.png" },
-  { name: "Brand F", logo: "/client/NESCAFE.png" },
+  { name: "Brand A", logo: "/client/chitose.png" },
+  { name: "Brand B", logo: "/client/hoipolloy.png" },
+  { name: "Brand C", logo: "/client/saokiid.png" },
+  { name: "Brand D", logo: "/client/kalea.png" },
+  { name: "Brand E", logo: "/client/talabia.png" },
+  { name: "Brand F", logo: "/client/keepfs.png" },
+  { name: "Brand G", logo: "/client/preface.png" },
+  { name: "Brand H", logo: "/client/ma.png" },
+  { name: "Brand I", logo: "/client/3zbo.png" },
+  { name: "Brand J", logo: "/client/f.png" },
 ];
 
-export default function TrustedBrands({ speed = 0.2 }) {
+export default function TrustedBrands({ speed = 1 }) {
 
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const isPausedRef = useRef(false);
@@ -69,19 +73,18 @@ export default function TrustedBrands({ speed = 0.2 }) {
 
             {displayBrands.map((brand, idx) => (
 
-              <div key={idx} className="flex-shrink-0">
+<div
+  key={idx}
+  className="flex-shrink-0 flex items-center justify-center h-[80px] w-[160px]"
+>
+  <img
+    src={brand.logo}
+    alt={brand.name}
+    className="max-h-[60px] w-auto object-contain"
+  />
+</div>
 
-                <img
-                  src={brand.logo}
-                  alt={brand.name}
-                  width={140}
-                  height={60}
-                  className="object-contain"
-                />
-
-              </div>
-
-            ))}
+              ))}
 
           </div>
 
@@ -90,5 +93,5 @@ export default function TrustedBrands({ speed = 0.2 }) {
       </div>
 
     </section>
-  );
+    );
 }

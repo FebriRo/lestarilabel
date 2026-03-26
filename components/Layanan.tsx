@@ -80,7 +80,7 @@ export default function Layanan() {
 
               {/* BUTTON WA */}
             <a
-             href="https://wa.me/628157174543?text=Halo%2C%20saya%20tertarik%20membuat%20label%20untuk%20brand%20saya.%20Bisa%20konsultasi%3F"
+             href="https://wa.me/6282174053966?text=Halo%2C%20saya%20tertarik%20membuat%20label%20untuk%20brand%20saya.%20Bisa%20konsultasi%3F"
              target="_blank"
              rel="noopener noreferrer"
              className="inline-flex items-center gap-2 mt-8 bg-[#25D366] text-white px-6 py-3 rounded-lg font-medium hover:scale-105 transition"

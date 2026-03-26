@@ -1,7 +1,7 @@
 export default function FloatingWA() {
   return (
     <a
-      href="https://wa.me/628157174543?text=Halo%2C%20saya%20tertarik%20membuat%20label%20untuk%20brand%20saya.%20Bisa%20konsultasi%3F"
+      href="https://wa.me/6282174053966?text=Halo%2C%20saya%20tertarik%20membuat%20label%20untuk%20brand%20saya.%20Bisa%20konsultasi%3F"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed right-6 top-[65%] -translate-y-1/2 z-50 flex items-center gap-3"

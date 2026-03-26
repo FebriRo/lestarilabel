@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer id="Kontak"  className="relative bg-[#0b0b0b] text-gray-300 pt-20 pb-10 overflow-hidden">
@@ -18,6 +19,42 @@ export default function Footer() {
               UMKM hingga produksi massal.
             </p>
 
+  {/* Social Media */}
+            <div className="flex items-center gap-4 mt-6">
+
+    {/* Instagram */}
+              <a
+                href="https://www.instagram.com/lestari.label/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#DC2626] transition"
+              >
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm9.25 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+                </svg>
+              </a>
+
+    {/* YouTube */}
+              <a
+                href="https://www.youtube.com/@lestarilabel9268"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#DC2626] transition"
+              >
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
+                </svg>
+              </a>
+
+            </div>
           </div>
         {/* COLUMN 2 */}
 
@@ -87,7 +124,7 @@ export default function Footer() {
                       </svg>
 
                       <p className="text-sm text-gray-400">
-                        +628-1571-74543
+                        0821-7405-3966
                       </p>
 
                     </div>
@@ -112,7 +149,7 @@ export default function Footer() {
                       </div>
 
 
-{/* OPENING HOURS */}
+                {/* OPENING HOURS */}
                       <div className="flex gap-3 p-4 border border-gray-800 rounded-lg hover:border-[#DC2626] transition">
 
                         <svg className="w-5 h-5 text-[#DC2626]"
@@ -147,21 +184,33 @@ export default function Footer() {
                     </h4>
                     <div className="w-10 h-[2px] bg-[#DC2626] mt-3 mb-6"></div>
                     <ul className="space-y-3 text-sm text-gray-400">
-                      <li className="hover:text-white transition cursor-pointer">
-                        Damask Label
+                      <li className="hover:text-white transition">
+                        <Link 
+                          href="/products/savepick" className="text-sm inline-flex items-center">
+                          Save Pick
+                        </Link>
                       </li>
-                      <li className="hover:text-white transition cursor-pointer">
-                        Save Pick
+                      <li className="hover:text-white transition">
+                        <Link 
+                          href="/products/damask" className="text-sm inline-flex items-center">
+                          Damask Label
+                        </Link>
                       </li>
-                      <li className="hover:text-white transition cursor-pointer">
-                        HD Woven Label
+                      <li className="hover:text-white transition">
+                        <Link 
+                          href="/products/hd" className="text-sm inline-flex items-center">
+                          HD Woven Label
+                        </Link>
                       </li>
-                      <li className="hover:text-white transition cursor-pointer">
-                        Double Woven Label
+                      <li className="hover:text-white transition">
+                        <Link 
+                          href="/products/double" className="text-sm inline-flex items-center">
+                          Double Woven Label
+                        </Link>
                       </li>
                     </ul>
                   </div>
-                  
+
                 </div>
 
 

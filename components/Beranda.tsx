@@ -4,22 +4,28 @@ export default function Beranda() {
       <div className="max-w-7xl mx-auto px-8 py-28 grid md:grid-cols-2 gap-16 items-center">
         {/* Text kiri */}
         <div>
-          <h1 className="text-[32px] md:text-[52px] leading-[1.1] font-semibold text-white">
-            Custom Label Berkualitas
-            <br />
-            Untuk Brand Anda
-          </h1>
 
-          <p className="mt-6 text-[17px] text-white/80 leading-relaxed max-w-xl">
-            Tingkatkan citra brand Anda dengan label woven, satin, dan hangtag berkualitas premium.
-            Diproduksi dengan detail presisi untuk hasil yang rapi, kuat, dan berkelas.
+          <p className="mt-4 text-[18px] md:text-[22px] text-white/90 font-medium">
+           
+            Butuh label woven berkualitas?
           </p>
 
+          <h1 className="text-[32px] md:text-[52px] leading-[1.1] font-semibold text-white">
+             Produksi cepat hanya <b>1–2 hari</b>.
+          </h1>
+
+
+          <p className="mt-6 text-[17px] text-white/80 leading-relaxed max-w-xl">
+            Kami hadir untuk mendukung kebutuhan produksi label kamu agar tetap cepat, lancar, dan
+            konsisten setiap saat. Dengan proses yang efisien dan tim yang berpengalaman, kami
+            memastikan label kamu diproduksi dengan cepat tanpa mengorbankan kualitas. Solusi ideal
+            untuk produksi label rutin, launching produk, dan restock cepat tanpa hambatan.
+          </p>
           <div className="mt-10 flex gap-5">
 
             {/* Tombol WhatsApp */}
             <a
-              href="https://wa.me/628157174543?text=Halo%2C%20saya%20tertarik%20membuat%20label%20untuk%20brand%20saya.%20Bisa%20konsultasi%3F"
+              href="https://wa.me/6282174053966?text=Halo%2C%20saya%20tertarik%20membuat%20label%20untuk%20brand%20saya.%20Bisa%20konsultasi%3F"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-[#25D366] text-white px-7 py-3.5 text-[15px] font-medium rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-200"
@@ -44,7 +50,7 @@ export default function Beranda() {
         <div className="flex justify-center">
           <div className="w-full max-w-[560px] aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
             <iframe
-              src="https://www.youtube.com/embed/TT37qARwsQQ?modestbranding=1"
+              src="https://www.youtube.com/embed/b3sxoBnzoLI"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

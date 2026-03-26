@@ -35,7 +35,7 @@ const products = {
   savepick: {
     title: "Save Pick",
     quote:
-    "Save Pick label Tenunan standar dengan biaya lebih ekonomis.",
+    ".",
     description: [
       "Tenunan lebih sederhana dibanding Damask.",
       "Cocok untuk desain logo sederhana.",

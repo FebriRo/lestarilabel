@@ -17,7 +17,7 @@ export default function Contactus() {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
 
           <a
-           href="https://wa.me/628157174543?text=Halo%2C%20saya%20tertarik%20membuat%20label%20untuk%20brand%20saya.%20Bisa%20konsultasi%3F"
+           href="https://wa.me/6282174053966?text=Halo%2C%20saya%20tertarik%20membuat%20label%20untuk%20brand%20saya.%20Bisa%20konsultasi%3F"
            target="_blank"
            rel="noopener noreferrer"
            className="flex items-center gap-3 bg-white border-2 border-[#DC2626] text-[#DC2626] px-7 py-3.5 text-[15px] font-medium rounded-lg shadow-md hover:bg-[#DC2626] hover:text-white transition-all duration-200"
