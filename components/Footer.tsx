@@ -146,24 +146,6 @@ export default function Footer() {
                   </div>
 
 
-{/* EMAIL */}
-                  <div className="flex gap-3 p-4 border border-gray-800 rounded-lg hover:border-[#DC2626] transition">
-
-                    <svg className="w-5 h-5 text-[#DC2626]"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round"
-                        d="M16 12H8m8 0l-8-5m8 5l-8 5"/>
-                      </svg>
-
-                      <p className="text-sm text-gray-400">
-                        info@lestarilabel.com
-                      </p>
-
-                    </div>
-
 
                 {/* OPENING HOURS */}
                     <div className="flex gap-3 p-4 border border-gray-800 rounded-lg hover:border-[#DC2626] transition">
