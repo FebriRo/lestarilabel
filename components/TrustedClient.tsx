@@ -1,16 +1,16 @@
 import { useEffect, useRef } from "react";
 
 const brands = [
-  { name: "Brand A", logo: "/client/chitose.png" },
-  { name: "Brand B", logo: "/client/hoipolloy.png" },
-  { name: "Brand C", logo: "/client/saokiid.png" },
-  { name: "Brand D", logo: "/client/kalea.png" },
-  { name: "Brand E", logo: "/client/talabia.png" },
-  { name: "Brand F", logo: "/client/keepfs.png" },
-  { name: "Brand G", logo: "/client/preface.png" },
-  { name: "Brand H", logo: "/client/ma.png" },
-  { name: "Brand I", logo: "/client/3zbo.png" },
-  { name: "Brand J", logo: "/client/f.png" },
+  { name: "Chitose", logo: "/client/chitose.png" },
+  { name: "Hoi Polloy", logo: "/client/hoipolloy.png" },
+  { name: "SAOKI", logo: "/client/saokiid.png" },
+  { name: "Talabia", logo: "/client/talabia.png" },
+  { name: "Kalea Attire", logo: "/client/kalea.png" },
+  { name: "Keepfs.id", logo: "/client/keepfs.png" },
+  { name: "Preface Warehouse", logo: "/client/preface.png" },
+  { name: "Umnawear", logo: "/client/ma.png" },
+  { name: "Bitsnbobs", logo: "/client/3zbo.png" },
+  { name: "Fabeeya", logo: "/client/f.png" },
 ];
 
 export default function TrustedBrands({ speed = 1 }) {
@@ -73,16 +73,19 @@ export default function TrustedBrands({ speed = 1 }) {
 
             {displayBrands.map((brand, idx) => (
 
-<div
-  key={idx}
-  className="flex-shrink-0 flex items-center justify-center h-[80px] w-[160px]"
->
-  <img
-    src={brand.logo}
-    alt={brand.name}
-    className="max-h-[60px] w-auto object-contain"
-  />
-</div>
+              <div
+                key={idx}
+                className="flex-shrink-0 flex flex-col items-center justify-center h-[100px] w-[160px]"
+              >
+                <img
+                  src={brand.logo}
+                  alt={brand.name}
+                  className="max-h-[60px] w-auto object-contain mb-2"
+                />
+                <p className="text-sm text-gray-600 text-center">
+                  {brand.name}
+                </p>
+              </div>
 
               ))}
 
