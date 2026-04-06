@@ -58,8 +58,7 @@ const products = {
       "/hd/HD5.png",
       "/hd/HD.png",
       "/hd/HD1.png",
-      "/hd/HD2.png",
-      "/hd/HD3.png"
+      "/hd/HD2.png"
     ],
   },
 
